@@ -1,9 +1,12 @@
 # Peaty things 
 **Pwllperian soil sensor CYD badge project**
 
-This project implements a badge that subscribes to an MQTT server that displays soil sensor measurements from Pwllperion. The idea is to display the soil temperature and moisture valued as they are published from each sensor. 
+This project implements a badge that subscribes to an MQTT server that displays soil sensor measurements from Pwllperion. The idea is to display the soil temperature and moisture valued as they are published from each sensor. There are about a dozen sensors and each sensor provides a reading about every 10 minutes. Thay are not synchronised so measurements arrive randomly.
 
-The badge also provides sound notifications (if a micro speaker is connected to the CYD) and allow the user to draw their name on the badge or draw little pictures!
+The badge also provides sound notifications (if a micro speaker is connected to the CYD) and allows the user to draw their name on the badge or draw little pictures!
+
+The Peaty Things badge was inspired by the "Talky Box" project that used an ESP32 to create a box that speaks the sensor values as the measurements are made.
+<https://www.mirandawhall.space/the-boggy-gassy-bubbly-ensemble/>
 
 ## Source
 
