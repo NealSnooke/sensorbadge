@@ -135,15 +135,20 @@ Good inofrmation is also available here:
 
 # Smooth fonts
 
-https://randomnerdtutorials.com/arduino-ide-2-install-esp32-littlefs/#installing-MAC
+The projcet uses anti aliased fonts for the larger labels. These need building from ttf font files and uploading to a ESP TinyFS filesystem.
 
-For smooth fonts go to this site and create a font from the ttf font file (vlw file)
+This was helpful to install the filesystem and uload files from the Arduino IDE.
+https://randomnerdtutorials.com/arduino-ide-2-install-esp32-littlefs/#installing-MAC.
+
+For smooth fonts go to this site and create a font (vlw file) from the ttf font description.
 
 <https://vlw-font-creator.m5stack.com>
 
-Then put that file in the data folder of the arduino projcet
+Then put that file in the data folder of the arduino project
 
-Then upload to ESP using LittleFS file syste to store fonts 
-use commmand-shift-p and use file uploader tool:
+Then upload to ESP using LittleFS file system to store fonts 
+In Arduino use commmand-shift-p and use file uploader tool:
 
 <https://ttfonts.net/font/3862_Bertram.htm>
+
+(note that if it fails to open the port, close the serial console tab and possibly reopen the projcet if Arduino is being stubborn about releasing the port.)
