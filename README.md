@@ -10,17 +10,17 @@ The Peaty Things Showy Box badge was inspired by the "Talky Box" project that us
 
 ## Source
 
-The project is a C++ program based on the Arduino libraries. The project and thus the source folder is called "badge".
+The project is a C++ program based on the Arduino libraries. The Arduino 2.3.4 IDE was used. The project and thus the source folder is called "badge".
 
 The project is based on the CYD (Chealp Yellow Display) boards available from Ali Express,  Ebay [Amazon](https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.amazon.co.uk%2FDiymore-Display-Bluetooth-Development-Resolution%2Fdp%2FB0DXFBKKQB%2F&data=05%7C02%7C%7Cb4aa6225b6744a9720bb08dea41eefc7%7Cd47b090e3f5a4ca084d09f89d269f175%7C0%7C0%7C639128649929235883%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=8G0Fz61cr17cIjGYYxxoQ2ka0NQbVoSIKLXBAC8XhGk%3D&reserved=0>)
 etc.
 
-Library | repo
----|---
-TFT_eSPI | <https://github.com/Bodmer/TFT_eSPI>
-TFT_Touch | <https://github.com/Bodmer/TFT_Touch>
-WiFi.h> | <https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi>
-PubSubClient.h | <https://github.com/knolleary/pubsubclient/releases/tag/v2.8>
+Library | ver | repo
+---|---|---
+TFT_eSPI | 2.5.43 |<https://github.com/Bodmer/TFT_eSPI>
+TFT_Touch |  22/11/15 |<https://github.com/Bodmer/TFT_Touch>
+WiFi.h> | |<https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi>
+PubSubClient.h | 2.8 |<https://github.com/knolleary/pubsubclient/releases/tag/v2.8>
 
 
 # Project E32R28T Board -  Notes 
