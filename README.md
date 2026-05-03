@@ -22,8 +22,9 @@ TFT_Touch |  22/11/15 |<https://github.com/Bodmer/TFT_Touch>
 WiFi.h> | |<https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi>
 PubSubClient.h | 2.8 |<https://github.com/knolleary/pubsubclient/releases/tag/v2.8>
 
+# Project E32R28T Board -  Notes 
 
-## Project E32R28T Board -  Notes 
+The following sections are notes made when developing the project. All the small details that I'll forget...
 
 Board specifications for reference:
 
@@ -132,8 +133,7 @@ This library simplgy needs the pins setting in the user program
 Good inofrmation is also available here:
 <https://www.lcdwiki.com/2.8inch_ESP32-32E_Display#ESP32_Parameters>
 
-# smooth fonts
-
+# Smooth fonts
 
 https://randomnerdtutorials.com/arduino-ide-2-install-esp32-littlefs/#installing-MAC
 
