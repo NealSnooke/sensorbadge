@@ -100,9 +100,9 @@ pinMode(21, OUTPUT);
 digitalWrite(21, HIGH);
 ```
 
-edit
+Edit (path is the Arduino library folder on my Mac)
 
-`/Users/nealsnooke/Documents/Arduino/libraries/TFT_eSPI/User_Setup.h
+`~user/Documents/Arduino/libraries/TFT_eSPI/User_Setup.h
 `
  
 to replace the default user setup with the one above
