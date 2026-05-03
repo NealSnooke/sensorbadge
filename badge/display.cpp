@@ -45,7 +45,7 @@ void clearSensorScreenTop(){
 void drawSpeakerIcon(){
 
 
-  uint16_t col = TFT_LIGHTGREY;
+  uint16_t col = TFT_DARKGREY;
 
   tft.drawWideLine(300, 2, 318, 21, 3, TFT_BLACK, TFT_BLACK); //clear red line
   
@@ -63,6 +63,14 @@ void drawSpeakerIcon(){
 
 }
 
+void drawClearIcon(){
+    uint16_t col = TFT_DARKGREY;
+    //x,y,r1,r2,w,h
+    tft.drawSmoothRoundRect(3, 3, 2, 3, 20, 20, col , TFT_BLACK);
+    //x, y, w, h, radius,  color,  bg_color
+    //tft.fillSmoothRoundRect(11, 3, 10, 20, 2, col , TFT_BLACK);
+}
+
 /**
  * display sensor reading (reading is sensor index number)
  */
@@ -75,21 +83,23 @@ void showSensor(int reading){
       int precision = 2;  // Number of digits after decimal point
       int font = 4;       // font number 2
 
-      int16_t xpos = 70;
+      int16_t xpos = 75;
       int16_t ypos = 58;
 
       //tft.fillRect(0, 35, 320, 240-35-32*2-1, TFT_BLACK); // clear the whole area
       //tft.fillRect(0, 35, 320, 95, TFT_BLACK); // clear the top area
       //clearSensorScreenTop();
 
-      tft.loadFont(AA_FONT_35, LittleFS); // Load another different font
+      
       if (reading == -1){
+        tft.loadFont(AA_FONT_25, LittleFS); // Load another different font
         tft.setTextDatum(CC_DATUM);
-        tft.drawString("No sensor messages yet", HWIDTH, ypos, font);
+        tft.drawString("No sensor messages", HWIDTH, ypos, font);
         tft.unloadFont(); // Remove the font to recover memory used
         return;
       }
 
+      tft.loadFont(AA_FONT_35, LittleFS); // Load another different font
       xpos += tft.drawString("Sensor  ", xpos, ypos);
       xpos += tft.drawNumber(reading, xpos, ypos);
       //xpos += tft.drawString("Sensor  ", xpos, ypos, font);
@@ -100,7 +110,7 @@ void showSensor(int reading){
       //tft.loadFont(BB_FONT_18, LittleFS); // Load another different font
       xpos = 10;
       //ypos = 110;
-      ypos = 103;
+      ypos = 100;
       tft.setTextColor(TFT_WHITE, TFT_BLACK); // foreground, background
 
       if (sensorReadings[reading].recent != 0) { //we have a reading
@@ -188,6 +198,7 @@ void showBackground(bool clear){
   }
 
   drawSpeakerIcon();
+  drawClearIcon();
 }
 
 /*
