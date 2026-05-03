@@ -23,7 +23,7 @@ WiFi.h> | |<https://github.com/espressif/arduino-esp32/tree/master/libraries/WiF
 PubSubClient.h | 2.8 |<https://github.com/knolleary/pubsubclient/releases/tag/v2.8>
 
 
-# Project E32R28T Board -  Notes 
+## Project E32R28T Board -  Notes 
 
 Board specifications for reference:
 
