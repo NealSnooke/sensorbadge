@@ -30,7 +30,6 @@ Board specifications for reference:
 * Chip type:          ESP32-D0WD-V3 (revision v3.1)
 * Features:           Wi-Fi, BT, Dual Core + LP Core,  240MHz, Vref calibration in eFuse, Coding Scheme None
 * Crystal frequency:  40MHz
-* MAC:                a4:f0:0f:68:28:ac
 
 ESP32-32E
 
