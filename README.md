@@ -11,7 +11,9 @@ The project is based on the CYD (Chealp Yellow Display) boards available from Al
 etc.
 
 
-# project E32R28T Board -  Notes 
+# Project E32R28T Board -  Notes 
+
+Board specifications for reference:
 
 * Chip type:          ESP32-D0WD-V3 (revision v3.1)
 * Features:           Wi-Fi, BT, Dual Core + LP Core,  240MHz, Vref calibration in eFuse, Coding Scheme None
@@ -20,16 +22,12 @@ etc.
 
 ESP32-32E
 
-ESP32-D0WD-V3,Xtensa dual-core 32-bit LX6 microprocessor
-
-Have Touch Sreen: E32R28T
-
-Driver chip ILI9341V, 240x320(pixels) XPT2046
-
-Touch screen XPT2046 controller
+* ESP32-D0WD-V3,Xtensa dual-core 32-bit LX6 microprocessor
+* Have Touch Sreen: E32R28T
+* Driver chip ILI9341V, 240x320(pixels) XPT2046
+* Touch screen XPT2046 controller
 
 Initial datasheet:
-
 <http://8.217.75.21/Industrial/Multilingual/CBAA0046-032_UK.pdf>
 
 Which links to:
