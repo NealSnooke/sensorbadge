@@ -1,4 +1,5 @@
-# Pwllperian soil sensor CYD badge project
+# Peaty things 
+**Pwllperian soil sensor CYD badge project**
 
 This project implements a badge that subscribes to an MQTT server that displays soil snesor measurements from Pwllperion.
 
