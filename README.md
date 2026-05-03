@@ -5,15 +5,22 @@ This project implements a badge that subscribes to an MQTT server that displays 
 
 The badge also provides sound notifications (if a micro speaker is connected to the CYD) and allows the user to draw their name on the badge or draw little pictures!
 
-The Peaty Things badge was inspired by the "Talky Box" project that used an ESP32 to create a box that speaks the sensor values as the measurements are made.
+The Peaty Things Showy Box badge was inspired by the "Talky Box" project that used an ESP32 to create a box that speaks the sensor values as the measurements are made.
 <https://www.mirandawhall.space/the-boggy-gassy-bubbly-ensemble/>
 
 ## Source
 
-The project is a C++ program based on the Arduino libraries. The projcet and thus the folder is called "badge".
+The project is a C++ program based on the Arduino libraries. The project and thus the source folder is called "badge".
 
 The project is based on the CYD (Chealp Yellow Display) boards available from Ali Express,  Ebay [Amazon](https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.amazon.co.uk%2FDiymore-Display-Bluetooth-Development-Resolution%2Fdp%2FB0DXFBKKQB%2F&data=05%7C02%7C%7Cb4aa6225b6744a9720bb08dea41eefc7%7Cd47b090e3f5a4ca084d09f89d269f175%7C0%7C0%7C639128649929235883%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=8G0Fz61cr17cIjGYYxxoQ2ka0NQbVoSIKLXBAC8XhGk%3D&reserved=0>)
 etc.
+
+Library | repo
+---|---
+TFT_eSPI | <https://github.com/Bodmer/TFT_eSPI>
+TFT_Touch | <https://github.com/Bodmer/TFT_Touch>
+WiFi.h> | <https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi>
+PubSubClient.h | <https://github.com/knolleary/pubsubclient/releases/tag/v2.8>
 
 
 # Project E32R28T Board -  Notes 
@@ -122,6 +129,9 @@ This library simplgy needs the pins setting in the user program
 #define DCS  33  /* Chip select pin (T_CS) of touch screen */
 #define DCLK 25  /* Clock pin (T_CLK) of touch screen */
 ```
+
+Good inofrmation is also available here:
+<https://www.lcdwiki.com/2.8inch_ESP32-32E_Display#ESP32_Parameters>
 
 # smooth fonts
 
